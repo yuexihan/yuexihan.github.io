@@ -16,7 +16,7 @@ Firstly, we introduce FastText, which may be one of the simplest models that uti
 
 Figure 1. Model architecture of FastText
 
-FastText is used as the baseline of this lab. Figure 1 shows the architecture of FastText. An embedding lookup table is randomly initialized and updated through training.  Through embedding lookup layer, each word in a document is transferred to word embedding. The word representations are then averaged into a text representation, which is in turn fed to a linear classifier. More introductions of FastText can be found in [2].
+FastText is used as the baseline of this lab. Figure 1 shows the architecture of FastText. An embedding lookup table is randomly initialized and updated through training.  Through embedding lookup layer, each word in a document is transferred to word embedding. The word representations are then averaged into a text representation, which is in turn fed to a linear classifier. More introductions of FastText can be found in [the paper][2].
 
 ### 1.3 Complex Classification Models
 
@@ -54,7 +54,7 @@ In this experiment, we provide a training set, a validating set and a testing se
 Each set is in CSV form and self-explanatory. The testing set also has a TSV form, which is used as the metadata file for embedding visualization in TensorBoard.
 
 You need to install python2 to run the example code.You need to upgrade TensorFlow and TensorBoard to their newest versions to run our example code. 
-The dataset and example code can be downloaded here.
+The dataset and example code can be downloaded [here][5].
 
 ## 3 Experiment Procedure
 
@@ -115,3 +115,4 @@ For more details, you can refer to <https://www.tensorflow.org/get_started/embed
 [2]: https://arxiv.org/pdf/1607.01759.pdf
 [3]: http://www.aclweb.org/anthology/D14-1181
 [4]: https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf
+[5]: sources/lab.tar.gz
