@@ -12,8 +12,7 @@ Documents classification is a fundamental task in natural language processing. T
 
 Firstly, we introduce FastText, which may be one of the simplest models that utilize word embeddings.
 
-<img src="images/fasttext.jpg" alt="Drawing" style="width: 200px;"/>
-![](images/fasttext.jpg =250x)
+<img src="images/fasttext.jpg" alt="Drawing" style="width: 400px;"/>
 Figure 1. Model architecture of FastText
 
 FastText is used as the baseline of this lab. Figure 1 shows the architecture of FastText. An embedding lookup table is randomly initialized and updated through training.  Through embedding lookup layer, each word in a document is transferred to word embedding. The word representations are then averaged into a text representation, which is in turn fed to a linear classifier. More introductions of FastText can be found in [2].
@@ -80,10 +79,10 @@ python main.py --embedding_size 20 --batch_size 64 --retrain True
 
 You can use TensorBoard to visualize word embeddings and paper embeddings. In FastText, we average word embeddings to fetch paper embeddings. So we can infer that stop words, such as have, are, to and et al, should have smaller embeddings; while terminologies, which are closely related to their certain categories, should have larger embedding vectors. Also we can infer that terminologies belong to the same category will lay together.
 
-![](images/finance_pca.jpg =250x)
+<img src="images/finance_pca.jpg" alt="Drawing" style="width: 400px;"/>
 Figure 2. Word embedding visualization
 
-![](images/papers_tsne.jpg =250x)
+<img src="images/papers_tsne.jpg" alt="Drawing" style="width: 400px;"/>
 Figure 3. Paper embedding visualization
 
 If './save/' is the folder which contains check-point file, to run TensorBoard:
