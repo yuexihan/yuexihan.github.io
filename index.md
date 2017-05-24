@@ -11,6 +11,10 @@ Documents classification is a fundamental task in natural language processing. T
 ### 1.2 A Simple Classification Model
 
 Firstly, we introduce FastText, which may be one of the simplest models that utilize word embeddings.
+
+![](images/fasttext.jpeg)
+Figure 1. Model architecture of FastText
+
 FastText is used as the baseline of this lab. Figure 1 shows the architecture of FastText. An embedding lookup table is randomly initialized and updated through training.  Through embedding lookup layer, each word in a document is transferred to word embedding. The word representations are then averaged into a text representation, which is in turn fed to a linear classifier. More introductions of FastText can be found in [2].
 
 ### 1.3 Complex Classification Models
@@ -42,7 +46,7 @@ You can refer to https://www.tensorflow.org/install/ for installation.
 
 NLTK is a natural language toolkit of python. Punkt is a package of NLTK and used to parse sentences. After installing NLTK, you can run python, import NLTK module and run nltk.download() to download needed NLTK packages.
 
-2.4 Download Dataset and Example Code
+### 2.4 Download Dataset and Example Code
 
 In this experiment, we provide a training set, a validating set and a testing set. Testing set is only used to test trained models. Using testing set to control training procedure is considered as cheating.
 Each set is in CSV form and self-explanatory. The testing set also has a TSV form, which is used as the metadata file for embedding visualization in TensorBoard.
