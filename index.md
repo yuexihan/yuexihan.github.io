@@ -12,6 +12,7 @@ Documents classification is a fundamental task in natural language processing. T
 
 Firstly, we introduce FastText, which may be one of the simplest models that utilize word embeddings.
 
+<img src="images/fasttext.jpg" alt="Drawing" style="width: 200px;"/>
 ![](images/fasttext.jpg =250x)
 Figure 1. Model architecture of FastText
 
