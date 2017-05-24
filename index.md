@@ -110,3 +110,8 @@ For more details, you can refer to <https://www.tensorflow.org/get_started/embed
 - Analyses of your visualization results.
 - Draw a confusion matrix and analyze reasons for misclassifications.
 - If you get accuracy higher than 90%, please write it down.(Bonus)
+
+[1]: https://code.google.com/archive/p/word2vec/
+[2]: https://arxiv.org/pdf/1607.01759.pdf
+[3]: http://www.aclweb.org/anthology/D14-1181
+[4]: https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf
