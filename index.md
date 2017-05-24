@@ -49,10 +49,55 @@ NLTK is a natural language toolkit of python. Punkt is a package of NLTK and use
 ### 2.4 Download Dataset and Example Code
 
 In this experiment, we provide a training set, a validating set and a testing set. Testing set is only used to test trained models. Using testing set to control training procedure is considered as cheating.
+
 Each set is in CSV form and self-explanatory. The testing set also has a TSV form, which is used as the metadata file for embedding visualization in TensorBoard.
+
 You need to install python2 to run the example code.You need to upgrade TensorFlow and TensorBoard to their newest versions to run our example code. 
 The dataset and example code can be downloaded here.
 
+## 3 Experiment Procedure
 
+### 3.1 Preprocessing
 
+Title and abstract are concatenated and treated as the content of paper. Then we count words and build vocabulary. There are multiple ways of extracting words. You can tokenize text and treat numbers and punctuations as words too, or you can use regular expression to split sentences and filter numbers and punctuations. Also you can transform words to their lower cases and filter words with sparse occurrences.
 
+After building vocabulary, you should represent words with their indices in vocabulary so that can be fed to a TensorFlow model. Categories should also be transformed to indices so that they can be fed to model too.
+
+### 3.2 Building and Training Your Model
+
+We have provided you with simple FastText model. You can implement a cnn model, a rnn model or simply conduct improvements on the simple FastText model.
+
+To run the provided example model, go to the downloaded folder:
+
+python main.py
+
+You can customize hyper-parameters and specify that the model should be retrained:
+
+python main.py --embedding_size 20 --batch_size 64 --retrain True
+
+### 3.3 Embedding Visualization
+
+You can use TensorBoard to visualize word embeddings and paper embeddings. In FastText, we average word embeddings to fetch paper embeddings. So we can infer that stop words, such as have, are, to and et al, should have smaller embeddings; while terminologies, which are closely related to their certain categories, should have larger embedding vectors. Also we can infer that terminologies belong to the same category will lay together.
+
+![](images/finance_pca.jpg)
+Figure 2. Word embedding visualization
+
+![](images/papers_tsne.jpg)
+Figure 3. Paper embedding visualization
+
+If './save/' is the folder which contains check-point file, to run TensorBoard:
+
+tensorboard --logdir save
+
+Then open your browser and open link localhost:6006.
+
+For more details, you can refer to https://www.tensorflow.org/get_started/embedding_viz. 
+
+## 4 Write Report
+
+- Brief introduction of your work.
+- Which model did you use to realize your classifier, and why?
+- The parameters you have chosen in your models, and why you chosen them?
+- Analyses of your visualization results.
+- Draw a confusion matrix and analyze reasons for misclassifications.
+- If you get accuracy higher than 90%, please write it down.(Bonus)
