@@ -6,7 +6,7 @@ This lab focus on introducing the basic nlp methods and implementing them on a s
 
 ### 1.1 Documents Classification
 
-Documents classification is a fundamental task in natural language processing. Traditional classification methods relies on feature engineering based on bag-of-words, production rules and linguistically-informed features. Since Mikolov opened word2vec source code in 2013 [1], the concept of embedding facilitates our classification task a lot. Recently, neural network based classification models greatly outperform previous linear models with hand-crafted sparse features. 
+Documents classification is a fundamental task in natural language processing. Traditional classification methods relies on feature engineering based on bag-of-words, production rules and linguistically-informed features. Since Mikolov opened [word2vec][1] source code in 2013, the concept of embedding facilitates our classification task a lot. Recently, neural network based classification models greatly outperform previous linear models with hand-crafted sparse features. 
 
 ### 1.2 A Simple Classification Model
 
@@ -20,7 +20,7 @@ FastText is used as the baseline of this lab. Figure 1 shows the architecture of
 
 ### 1.3 Complex Classification Models
 
-We introduce more complicated models here. n-gram rather than single word can be used in FastText. One dimensional cnn  [3] is a good tool for synthesizing meaning of a document. Rnn with attention mechanism [4] can also be used in classification. We can use pre-trained word representations [1] to initialize lookup table. 
+We introduce more complicated models here. n-gram rather than single word can be used in FastText. [One dimensional cnn][3] is a good tool for synthesizing meaning of a document. [Rnn with attention mechanism][4] can also be used in classification. We can use [pre-trained word representations][1] to initialize lookup table. 
 
 ### 1.4 Goals of this Lab
 
@@ -37,11 +37,11 @@ The bonus of this lab are:
 
 ### 2.1 Installation of Python
 
-You can download Python in https://www.python.org/downloads/.
+You can download Python in <https://www.python.org/downloads/>.
 
 ### 2.2 Installation of TensorFlow and TensorBoard
 
-You can refer to https://www.tensorflow.org/install/ for installation.
+You can refer to <https://www.tensorflow.org/install/> for installation.
 
 ### 2.3 Installation of NLTK
 
@@ -70,11 +70,15 @@ We have provided you with simple FastText model. You can implement a cnn model, 
 
 To run the provided example model, go to the downloaded folder:
 
+```bash
 python main.py
+```
 
 You can customize hyper-parameters and specify that the model should be retrained:
 
+```bash
 python main.py --embedding_size 20 --batch_size 64 --retrain True
+```
 
 ### 3.3 Embedding Visualization
 
@@ -90,11 +94,13 @@ Figure 3. Paper embedding visualization
 
 If './save/' is the folder which contains check-point file, to run TensorBoard:
 
+```bash
 tensorboard --logdir save
+```
 
 Then open your browser and open link localhost:6006.
 
-For more details, you can refer to https://www.tensorflow.org/get_started/embedding_viz. 
+For more details, you can refer to <https://www.tensorflow.org/get_started/embedding_viz>. 
 
 ## 4 Write Report
 
