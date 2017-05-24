@@ -2,7 +2,7 @@
 
 ## Lab Editors of Wireless Course, Advised by Prof. Xinbing Wang and Prof. Xiaohua Tian
 
-###Shanghai Jiao Tong University
+### Shanghai Jiao Tong University
 
 ## 1 Introduction
 
