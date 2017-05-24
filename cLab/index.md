@@ -1,5 +1,9 @@
 # Papers Classification and Visualization
 
+## Lab Editors of Wireless Course, Advised by Prof. Xinbing Wang and Prof. Xiaohua Tian
+
+###Shanghai Jiao Tong University
+
 ## 1 Introduction
 
 This lab focus on introducing the basic nlp methods and implementing them on a specific topic, to classify and visualize papers. In this lab, you will learn some basic concepts and steps in natural language processing and realize them using Python. Moreover, you will use Tensorflow to build your model and Tensorboard to visualize the results.
