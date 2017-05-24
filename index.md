@@ -12,7 +12,7 @@ Documents classification is a fundamental task in natural language processing. T
 
 Firstly, we introduce FastText, which may be one of the simplest models that utilize word embeddings.
 
-![](images/fasttext.jpeg)
+![](images/fasttext.jpg)
 Figure 1. Model architecture of FastText
 
 FastText is used as the baseline of this lab. Figure 1 shows the architecture of FastText. An embedding lookup table is randomly initialized and updated through training.  Through embedding lookup layer, each word in a document is transferred to word embedding. The word representations are then averaged into a text representation, which is in turn fed to a linear classifier. More introductions of FastText can be found in [2].
